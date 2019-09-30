@@ -1,0 +1,27 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y120"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!--返回-->
+    <LinearLayout
+        android:id="@+id/ll_top_back"
+        android:layout_width="@dimen/x400"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/x60"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/y80"
+            android:padding="3dp"
+            app:srcCompat="@drawable/ic_back" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
